@@ -5,7 +5,7 @@
 <title>sample1</title>
 <link href='image-viewer.css' type='text/css' rel="stylesheet"/>
 <script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
-<script type="text/javascript" src="./jquery/image-viewer.js"></script>
+<script type="text/javascript" src="image-viewer.js"></script>
 <script>
 
 /*
@@ -52,8 +52,6 @@
 			name: "툴립",
 			file: "Tulips.jpg"
 		}];
-	
-	
 	var changeImage = function () {
 		var index = Math.floor(Math.random() * images.length);
 		
@@ -66,6 +64,7 @@
 	
 	var slideImage = function () {
 		isSliding ? $('#btn-slideshow').html('슬라이드쇼 중지') : $('#btn-slideshow').html('슬라이드쇼 시작');
+		
 		if(isSliding){
 			startSlide();
 		}else{
@@ -79,7 +78,6 @@
 		
 		var _this = this;
 		var index = Math.floor(Math.random() * images.length);
-		console.log(isSliding);
 
 		
 	
@@ -98,10 +96,8 @@
 		
 	}
 	
-	var stopSlide = function () {
-		
+	var stopSlide = function () {	
 		clearInterval(interval);
-
 	}
 	
 

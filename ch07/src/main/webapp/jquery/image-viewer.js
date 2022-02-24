@@ -1,5 +1,0 @@
-var imageViewr = {
-	init: function(){
-		
-	}
-}
